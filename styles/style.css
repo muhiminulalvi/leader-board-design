@@ -148,3 +148,31 @@ hr {
     padding: 5px 10px;
     border-radius: 15px;
 }
+
+/* Media Query */
+
+@media screen and (max-width: 668px) {
+    .container{
+        width: 100%;
+    }
+
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .player, .blog, .courses{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:669px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+}
